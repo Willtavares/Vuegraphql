@@ -97,7 +97,6 @@ export default {
     try {
       const response = await this.$apollo.query(peoplesQuery);
       this.information = response.data.allPersons;
-      console.log(this.information);
     } catch (error) {
       console.log(error);
     }
